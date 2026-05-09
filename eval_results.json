@@ -1,0 +1,204 @@
+[
+  {
+    "id": "C1 - Senior Leadership Selection",
+    "recall@10": 0.667,
+    "precision": 0.667,
+    "hits": [
+      "OPQ Leadership Report",
+      "Occupational Personality Questionnaire OPQ32r"
+    ],
+    "missed": [
+      "OPQ Universal Competency Report 2.0"
+    ],
+    "extra": [
+      "SHL Verify Interactive G+"
+    ],
+    "recommended": [
+      "OPQ Leadership Report",
+      "Occupational Personality Questionnaire OPQ32r",
+      "SHL Verify Interactive G+"
+    ]
+  },
+  {
+    "id": "C2 - Senior Rust Engineer",
+    "recall@10": 0.8,
+    "precision": 0.667,
+    "hits": [
+      "Linux Programming (General)",
+      "Networking and Implementation (New)",
+      "SHL Verify Interactive G+",
+      "Smart Interview Live Coding"
+    ],
+    "missed": [
+      "Occupational Personality Questionnaire OPQ32r"
+    ],
+    "extra": [
+      "Docker (New)",
+      "RESTful Web Services (New)"
+    ],
+    "recommended": [
+      "Docker (New)",
+      "Linux Programming (General)",
+      "Networking and Implementation (New)",
+      "RESTful Web Services (New)",
+      "SHL Verify Interactive G+",
+      "Smart Interview Live Coding"
+    ]
+  },
+  {
+    "id": "C3 - Contact Centre Agents",
+    "recall@10": 0.75,
+    "precision": 1.0,
+    "hits": [
+      "Contact Center Call Simulation (New)",
+      "Customer Service Phone Simulation",
+      "SVAR Spoken English (US) (New)"
+    ],
+    "missed": [
+      "Entry Level Customer Serv - Retail & Contact Center"
+    ],
+    "extra": [],
+    "recommended": [
+      "Contact Center Call Simulation (New)",
+      "Customer Service Phone Simulation",
+      "SVAR Spoken English (US) (New)"
+    ]
+  },
+  {
+    "id": "C4 - Graduate Financial Analysts",
+    "recall@10": 0.75,
+    "precision": 1.0,
+    "hits": [
+      "Financial Accounting (New)",
+      "Graduate Scenarios",
+      "SHL Verify Interactive \u2013 Numerical Reasoning"
+    ],
+    "missed": [
+      "Basic Statistics (New)"
+    ],
+    "extra": [],
+    "recommended": [
+      "Financial Accounting (New)",
+      "Graduate Scenarios",
+      "SHL Verify Interactive \u2013 Numerical Reasoning"
+    ]
+  },
+  {
+    "id": "C5 - Sales Organisation Talent Audit",
+    "recall@10": 1.0,
+    "precision": 1.0,
+    "hits": [
+      "Global Skills Assessment",
+      "Global Skills Development Report",
+      "OPQ MQ Sales Report",
+      "Occupational Personality Questionnaire OPQ32r",
+      "Sales Transformation 2.0 - Individual Contributor"
+    ],
+    "missed": [],
+    "extra": [],
+    "recommended": [
+      "Global Skills Assessment",
+      "Global Skills Development Report",
+      "OPQ MQ Sales Report",
+      "Occupational Personality Questionnaire OPQ32r",
+      "Sales Transformation 2.0 - Individual Contributor"
+    ]
+  },
+  {
+    "id": "C6 - Chemical Plant Operators",
+    "recall@10": 1.0,
+    "precision": 1.0,
+    "hits": [
+      "Manufac. & Indust. - Safety & Dependability 8.0",
+      "Workplace Health and Safety (New)"
+    ],
+    "missed": [],
+    "extra": [],
+    "recommended": [
+      "Manufac. & Indust. - Safety & Dependability 8.0",
+      "Workplace Health and Safety (New)"
+    ]
+  },
+  {
+    "id": "C7 - Bilingual Healthcare Admin",
+    "recall@10": 0.2,
+    "precision": 0.25,
+    "hits": [
+      "HIPAA (Security)"
+    ],
+    "missed": [
+      "Dependability and Safety Instrument (DSI)",
+      "Medical Terminology (New)",
+      "Microsoft Word 365 - Essentials (New)",
+      "Occupational Personality Questionnaire OPQ32r"
+    ],
+    "extra": [
+      "Customer Service Phone Simulation",
+      "SHL Verify Interactive G+",
+      "SHL Verify Interactive \u2013 Verbal Reasoning"
+    ],
+    "recommended": [
+      "Customer Service Phone Simulation",
+      "HIPAA (Security)",
+      "SHL Verify Interactive G+",
+      "SHL Verify Interactive \u2013 Verbal Reasoning"
+    ]
+  },
+  {
+    "id": "C8 - Admin Assistants Excel/Word",
+    "recall@10": 0.667,
+    "precision": 1.0,
+    "hits": [
+      "Microsoft Excel 365 (New)",
+      "Microsoft Word 365 (New)"
+    ],
+    "missed": [
+      "Occupational Personality Questionnaire OPQ32r"
+    ],
+    "extra": [],
+    "recommended": [
+      "Microsoft Excel 365 (New)",
+      "Microsoft Word 365 (New)"
+    ]
+  },
+  {
+    "id": "C9 - Senior Full-Stack Engineer",
+    "recall@10": 0.857,
+    "precision": 1.0,
+    "hits": [
+      "Amazon Web Services (AWS) Development (New)",
+      "Core Java (Advanced Level) (New)",
+      "Docker (New)",
+      "SHL Verify Interactive G+",
+      "SQL (New)",
+      "Spring (New)"
+    ],
+    "missed": [
+      "Occupational Personality Questionnaire OPQ32r"
+    ],
+    "extra": [],
+    "recommended": [
+      "Amazon Web Services (AWS) Development (New)",
+      "Core Java (Advanced Level) (New)",
+      "Docker (New)",
+      "SHL Verify Interactive G+",
+      "SQL (New)",
+      "Spring (New)"
+    ]
+  },
+  {
+    "id": "C10 - Graduate Management Trainee",
+    "recall@10": 1.0,
+    "precision": 1.0,
+    "hits": [
+      "Graduate Scenarios",
+      "SHL Verify Interactive G+"
+    ],
+    "missed": [],
+    "extra": [],
+    "recommended": [
+      "Graduate Scenarios",
+      "SHL Verify Interactive G+"
+    ]
+  }
+]

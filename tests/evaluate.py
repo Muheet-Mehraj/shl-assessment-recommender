@@ -3,18 +3,20 @@ Offline evaluator — tests the agent logic against the 10 reference conversatio
 Runs without a live server by calling the LLM directly via the same code path.
 
 Usage:
-    ANTHROPIC_API_KEY=sk-... python evaluate.py
+    Gemini_API_KEY=... python evaluate.py
 """
 
 import asyncio
 import json
 import sys
 import os
+import asyncio
 
-sys.path.insert(0, os.path.dirname(__file__))
-os.chdir(os.path.dirname(__file__))
+PROJECT_ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
+sys.path.insert(0, PROJECT_ROOT)
+os.chdir(PROJECT_ROOT)
 
-from main import call_gemini as call_llm, parse_llm_response, validate_recommendations
+from app.main import call_gemini as call_llm, parse_llm_response, validate_recommendations
 
 # ── Ground-truth final shortlists from the 10 conversations ──────────
 TRACES = [
@@ -176,15 +178,22 @@ async def main():
     print("=" * 70)
 
     results = []
+
     for trace in TRACES:
         print(f"\n▶ {trace['id']} ...", end=" ", flush=True)
+
         result = await evaluate_trace(trace)
         results.append(result)
+
+        await asyncio.sleep(8)
+
         print(f"Recall@10={result['recall@10']:.3f}  Precision={result['precision']:.3f}")
+
         if result["missed"]:
-            print(f"  MISSED: {result['missed']}")
+           print(f"  MISSED: {result['missed']}")
+
         if result["extra"]:
-            print(f"  EXTRA:  {result['extra']}")
+           print(f"  EXTRA:  {result['extra']}")
 
     avg_recall = sum(r["recall@10"] for r in results) / len(results)
     avg_precision = sum(r["precision"] for r in results) / len(results)
